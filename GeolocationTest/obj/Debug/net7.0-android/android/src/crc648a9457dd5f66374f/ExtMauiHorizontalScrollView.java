@@ -15,6 +15,7 @@ public class ExtMauiHorizontalScrollView
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_isHorizontalScrollBarEnabled:()Z:GetIsHorizontalScrollBarEnabledHandler\n" +
 			"n_setHorizontalScrollBarEnabled:(Z)V:GetSetHorizontalScrollBarEnabled_ZHandler\n" +
+			"n_computeScroll:()V:GetComputeScrollHandler\n" +
 			"";
 		mono.android.Runtime.register ("Syncfusion.Maui.Core.Hosting.ExtMauiHorizontalScrollView, Syncfusion.Maui.Core", ExtMauiHorizontalScrollView.class, __md_methods);
 	}
@@ -94,6 +95,14 @@ public class ExtMauiHorizontalScrollView
 	}
 
 	private native void n_setHorizontalScrollBarEnabled (boolean p0);
+
+
+	public void computeScroll ()
+	{
+		n_computeScroll ();
+	}
+
+	private native void n_computeScroll ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
