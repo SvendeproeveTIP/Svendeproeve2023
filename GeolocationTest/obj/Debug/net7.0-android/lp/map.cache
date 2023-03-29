@@ -9,7 +9,9 @@ Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Microsoft.Maui.Maps.dll
 Syncfusion.Maui.Core.dll
+Syncfusion.Maui.Gauges.dll
 Syncfusion.Maui.Maps.dll
+Syncfusion.Maui.ProgressBar.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -177,6 +179,9 @@ maui.aar
 Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Microsoft.Maui.Maps.aar
+Syncfusion.Maui.Core.aar
+Syncfusion.Maui.Gauges.aar
+Syncfusion.Maui.ProgressBar.aar
 Xamarin.Google.AutoValue.Annotations.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 play-services-base.aar
@@ -190,8 +195,3 @@ playservicesbasement-18.1.0.aar
 playservicestasks-18.0.2.aar
 playservicesbase-18.1.0.aar
 playservicesmaps-18.1.0.aar
-Syncfusion.Maui.ProgressBar.dll
-Syncfusion.Maui.Core.aar
-Syncfusion.Maui.ProgressBar.aar
-Syncfusion.Maui.Gauges.dll
-Syncfusion.Maui.Gauges.aar

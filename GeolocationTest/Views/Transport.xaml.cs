@@ -1,9 +1,12 @@
+using Microsoft.Maui.Dispatching;
+using System.Diagnostics;
+
 namespace GeolocationTest.Views;
 
 [QueryProperty(nameof(QrCodeResult), "qrCodeResult")]
 public partial class Transport : ContentPage
 {
-    bool isCircularTimerOn = true;
+    Stopwatch stopwatch;
     public Transport()
 	{
 		InitializeComponent();
@@ -14,39 +17,31 @@ public partial class Transport : ContentPage
             IsEnabled = false
         });
 
-        Dispatcher.StartTimer(TimeSpan.FromSeconds(1), () =>
-        {
-            if (!isCircularTimerOn)
-            {
-                pause.IsVisible = false;
-                return false;
-            }
+        stopwatch = new Stopwatch();
 
-            Dispatcher.DispatchAsync(() =>
+        stopwatch.Start();
+        Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+        {
+            if (pointer.Value == 18000)
+            {
+                stopwatch.Stop();
+                pointer.Value = 18000;
+            }
+            else
             {
                 pointer.Value++;
-                if (pointer.Value > 7200)
-                {
-                    isCircularTimerOn = false;
-                    pointer.Value = 0;
-                    timer.Text = "00:00";
-                }
-                else
-                {
-                    timer.Text = pointer.Value.ToString("00:00");
-                }
-            });
+                TimeSpan ts = stopwatch.Elapsed;
 
+                string elapsedTime = ts.ToString(@"hh\:mm\:ss");
+
+                timerLabel.Text = elapsedTime;
+            }
             return true;
         });
     }
-    private void play_pause_Clicked(object sender, EventArgs e)
+    private void betalBTN(object sender, EventArgs e)
     {
-        isCircularTimerOn = !isCircularTimerOn;
-        if (isCircularTimerOn)
-        {
-            pause.IsVisible = true;
-        }
+        stopwatch.Stop();
     }
     public string QrCodeResult
     {

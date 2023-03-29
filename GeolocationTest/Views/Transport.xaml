@@ -19,7 +19,7 @@
                 <gauge:RadialAxis
                               StartAngle="270"
                               EndAngle="270"
-                              Maximum="7200"
+                              Maximum="18000"
                               ShowLabels="False"
                               ShowTicks="False">
                     <gauge:RadialAxis.Pointers>
@@ -44,7 +44,7 @@
                             <gauge:GaugeAnnotation.Content>
                                 <StackLayout>
                                     <Button x:Name="pause"
-                                        Clicked="play_pause_Clicked"
+                                        Clicked="betalBTN"
                                         Text="Betal"
                                         TextTransform="Uppercase"
                                         IsVisible="True"
@@ -63,9 +63,9 @@
                                            DirectionValue="0"
                                            DirectionUnit="AxisValue">
                             <gauge:GaugeAnnotation.Content>
-                                <Label x:Name="timer"
-                                   Text="00:00"
-                                   FontSize="80"
+                                <Label x:Name="timerLabel"
+                                   Text="00:00:00"
+                                   FontSize="60"
                                    TextColor="Green" />
                             </gauge:GaugeAnnotation.Content>
                         </gauge:GaugeAnnotation>

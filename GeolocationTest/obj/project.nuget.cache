@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "241FSFgWGkeXVqGVM3xW6vW7u38szyPOC3ns0o+jJVE6/F3ddbhOOE/s/UXJRffkQBD9m1Y4TXWBE0qVWjwVcA==",
+  "dgSpecHash": "CPrmvMDh7sQGrrVomDvrscJh8ikDRh0UNLCwqPGhgClpxynpOTBT71AEHofJSJpSXkHFbhIw3jglGCIO+h1cmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\porij\\Source\\Repos\\SvendeproeveTIP\\Svendeproeve2023\\GeolocationTest\\GeolocationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\porij\\.nuget\\packages\\clancey.comet\\0.3.467-beta\\clancey.comet.0.3.467-beta.nupkg.sha512",
+    "C:\\Users\\porij\\.nuget\\packages\\ecocore\\7.0.0.14638\\ecocore.7.0.0.14638.nupkg.sha512",
     "C:\\Users\\porij\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\porij\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\porij\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -126,5 +127,16 @@
     "C:\\Users\\porij\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.1\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.1.nupkg.sha512",
     "C:\\Users\\porij\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.1\\microsoft.netcore.app.runtime.win-x64.7.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EcoCore 7.0.0.14638' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-android33.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EcoCore",
+      "targetGraphs": [
+        "net7.0-android33.0"
+      ]
+    }
+  ]
 }
