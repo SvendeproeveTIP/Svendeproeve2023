@@ -2,6 +2,8 @@
 using ZXing.Net.Maui;
 using Microsoft.Maui.Platform;
 using Syncfusion.Maui.Core.Hosting;
+using GeolocationTest.Services;
+using GeolocationTest.Views;
 
 namespace GeolocationTest;
 
@@ -33,6 +35,12 @@ public static class MauiProgram
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
+		builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
+		builder.Services.AddSingleton<IMap>(Map.Default);
+
+		builder.Services.AddSingleton<TransportService>();
+		builder.Services.AddSingleton<TransportViewModel>();
+		builder.Services.AddSingleton<MainPage>();
 
 		return builder.Build();
 	}

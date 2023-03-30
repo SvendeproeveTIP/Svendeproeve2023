@@ -2,19 +2,51 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using Microsoft.Maui.Maps;
+using System.Windows.Input;
 
 namespace GeolocationTest;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+    IGeolocation geolocation;
+    private bool _isCheckingLocation;
+	public MainPage(TransportViewModel viewModel)
 	{
 		InitializeComponent();
+		BindingContext = viewModel;
 		InitMap1();
-      
+        GetCurrentLocation();
+
     }
 
-	void InitMap1()
+    public async Task GetCurrentLocation()
+    {
+
+        try
+        {
+            _isCheckingLocation = true;
+
+            GeolocationRequest request = new GeolocationRequest(GeolocationAccuracy.Medium, TimeSpan.FromSeconds(1));
+
+            Location position = await Geolocation.Default.GetLocationAsync(request);
+
+            Location location = new Location(position.Latitude, position.Longitude);
+            MapSpan mapSpan = new MapSpan(location, 0.1, 0.1);
+            MyMap.MoveToRegion(mapSpan);
+           
+
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Unable to query location: {ex.Message}");
+            await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
+        }
+        finally
+        {
+            _isCheckingLocation = false;
+        }
+    }
+    void InitMap1()
 	{
 		var customPinFromImage = new CustomPin()
 		{

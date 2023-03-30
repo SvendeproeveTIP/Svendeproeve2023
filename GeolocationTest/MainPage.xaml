@@ -5,22 +5,9 @@
              xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
              xmlns:mauiMaps="clr-namespace:GeolocationTest"
              xmlns:models="clr-namespace:GeolocationTest.Models"
+             xmlns:viewmodels="clr-namespace:GeolocationTest.ViewModels"
              x:Class="GeolocationTest.MainPage">
     <maps:Map x:Name="MyMap" IsShowingUser="True" ItemsSource="{Binding LocationPins}" IsZoomEnabled="True">
-        <x:Arguments>
-            <MapSpan>
-                <x:Arguments>
-                    <sensors:Location>
-                        <x:Arguments>
-                            <x:Double>55.381508710733925</x:Double>
-                            <x:Double>10.408956650729994</x:Double>
-                        </x:Arguments>
-                    </sensors:Location>
-                    <x:Double>0.01</x:Double>
-                    <x:Double>0.01</x:Double>
-                </x:Arguments>
-            </MapSpan>
-        </x:Arguments>
         <maps:Map.ItemTemplate>
             <DataTemplate x:DataType="{x:Type models:LocationPin}">
                 <mauiMaps:CustomPin

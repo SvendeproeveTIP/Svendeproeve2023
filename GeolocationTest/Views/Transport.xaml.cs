@@ -42,6 +42,7 @@ public partial class Transport : ContentPage
     private void betalBTN(object sender, EventArgs e)
     {
         stopwatch.Stop();
+        Shell.Current.GoToAsync(nameof(MobilePay));
     }
     public string QrCodeResult
     {

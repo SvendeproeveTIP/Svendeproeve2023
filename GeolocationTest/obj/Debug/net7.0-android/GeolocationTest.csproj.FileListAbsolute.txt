@@ -2164,3 +2164,5 @@ C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb

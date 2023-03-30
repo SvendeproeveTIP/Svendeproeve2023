@@ -8,5 +8,6 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 		Routing.RegisterRoute(nameof(Transport), typeof(Transport));
+		Routing.RegisterRoute(nameof(MobilePay), typeof(MobilePay));
 	}
 }

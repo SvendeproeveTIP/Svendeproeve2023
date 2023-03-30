@@ -9,6 +9,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.dll",
 		"Microsoft.Maui.Essentials.dll",
 		"Comet.dll",
+		"CommunityToolkit.Mvvm.dll",
 		"Eco.Handles.dll",
 		"Eco.Interfaces.dll",
 		"Eco.LinqExtender.dll",
