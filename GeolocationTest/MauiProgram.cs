@@ -38,9 +38,20 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
 		builder.Services.AddSingleton<IMap>(Map.Default);
 
+		//Services
 		builder.Services.AddSingleton<TransportService>();
+
+		//View Models
 		builder.Services.AddSingleton<TransportViewModel>();
+		builder.Services.AddSingleton<BetalingViewModel>();
+		builder.Services.AddSingleton<BaseViewModel>();
+
+		//Views Registration
 		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<MobilePay>();
+		builder.Services.AddSingleton<PopupPage>();
+		builder.Services.AddSingleton<Scan>();
+		builder.Services.AddSingleton<Transport>();
 
 		return builder.Build();
 	}

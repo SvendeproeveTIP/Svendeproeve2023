@@ -2,22 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GeolocationTest.Views.MobilePay"
+             xmlns:models="clr-namespace:GeolocationTest.Models"
+             xmlns:viewModels="clr-namespace:GeolocationTest.ViewModels"
              BackgroundColor="White"
+             x:DataType="viewModels:BetalingViewModel"
              Title="MobilePay">
     <VerticalStackLayout>
         <SwipeView>
             <SwipeView.LeftItems>
                 <SwipeItems Mode="Execute">
-                    <SwipeItem Command="{Binding PayCommand}" BackgroundColor="White"/>
+                    <SwipeItem Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:BetalingViewModel}}, Path=BetalCommand}" BackgroundColor="White"/>
                 </SwipeItems>
             </SwipeView.LeftItems>
-            <Grid HeightRequest="60"
-          WidthRequest="300"
-          BackgroundColor="#426ff5">
-                <Label Text="Godkendt"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-            </Grid>
+            <Border StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,40,40,40"
+                    Background="#426ff5"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                <Border.Stroke>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#425ff5"
+                          Offset="0.1" />
+                        <GradientStop Color="#424ff5"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Stroke>
+                <Grid HeightRequest="60"
+                      WidthRequest="300">
+                    <Image Source="arrow.png" HorizontalOptions="Start"/>
+                    <Label Text="Godkendt"
+                         FontSize="20"
+                         FontAttributes="Bold"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"/>
+                </Grid>
+            </Border>
         </SwipeView>
     </VerticalStackLayout>
 </ContentPage>

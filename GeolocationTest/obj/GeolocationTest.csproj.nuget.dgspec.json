@@ -103,6 +103,10 @@
               "version": "[7.0.52, )",
               "autoReferenced": true
             },
+            "Plugin.Maui.Popup": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.35, )"
@@ -261,6 +265,10 @@
               "version": "[7.0.52, )",
               "autoReferenced": true
             },
+            "Plugin.Maui.Popup": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
               "version": "[21.1.35, )"
@@ -363,6 +371,10 @@
               "target": "Package",
               "version": "[7.0.52, )",
               "autoReferenced": true
+            },
+            "Plugin.Maui.Popup": {
+              "target": "Package",
+              "version": "[1.0.5, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
@@ -483,6 +495,10 @@
               "target": "Package",
               "version": "[1.2.221109.1, )",
               "autoReferenced": true
+            },
+            "Plugin.Maui.Popup": {
+              "target": "Package",
+              "version": "[1.0.5, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",

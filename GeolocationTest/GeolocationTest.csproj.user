@@ -11,6 +11,9 @@
     <MauiXaml Update="Views\MobilePay.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\PopupPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Scan.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

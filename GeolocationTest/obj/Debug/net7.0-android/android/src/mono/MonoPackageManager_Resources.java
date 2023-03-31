@@ -27,6 +27,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.Maps.dll",
 		"Microsoft.Maui.Graphics.dll",
 		"Microsoft.Maui.Maps.dll",
+		"MauiPopup.dll",
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.Maui.Core.dll",
 		"Syncfusion.Maui.Gauges.dll",

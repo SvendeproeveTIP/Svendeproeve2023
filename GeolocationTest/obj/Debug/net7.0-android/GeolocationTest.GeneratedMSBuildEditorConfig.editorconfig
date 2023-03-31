@@ -50,6 +50,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.Mobi
 build_metadata.AdditionalFiles.TargetPath = Views\MobilePay.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MobilePay.xaml
 
+[C:/Users/porij/Source/Repos/SvendeproeveTIP/Svendeproeve2023/GeolocationTest/Views/PopupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.PopupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PopupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PopupPage.xaml
+
 [C:/Users/porij/Source/Repos/SvendeproeveTIP/Svendeproeve2023/GeolocationTest/Views/Scan.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GeolocationTest.Views.Scan.xaml
