@@ -2168,3 +2168,5 @@ C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\android\assets\MauiPopup.dll
 C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\resizetizer\r\drawable\arrow.png
+C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\resizetizer\r\drawable\mastercard.png
+C:\Users\porij\Source\Repos\SvendeproeveTIP\Svendeproeve2023\GeolocationTest\obj\Debug\net7.0-android\resizetizer\r\drawable\lemoun.png

@@ -55,6 +55,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\elscooter.png" />
+	  <None Remove="Resources\Images\lemoun.png" />
+	  <None Remove="Resources\Images\mastercard.png" />
 	  <None Remove="Resources\Images\scan.png" />
 	  <None Remove="Resources\Images\transparent.png" />
 	</ItemGroup>
