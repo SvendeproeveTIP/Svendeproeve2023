@@ -6,6 +6,8 @@
              xmlns:viewModels="clr-namespace:GeolocationTest.ViewModels"
              BackgroundColor="#e0e0e0"
              x:DataType="viewModels:BetalingViewModel"
+             Shell.TabBarIsVisible="False"
+             NavigationPage.HasBackButton="False"
              Title="MobilePay">
     <VerticalStackLayout>
         <Grid>
@@ -17,7 +19,7 @@
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
             <StackLayout Spacing="10" BackgroundColor="White" WidthRequest="250" HeightRequest="150" Grid.Row="1" >
-                <Label Margin="0, 20, 0, 0" TextColor="Black" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center">34 kr</Label>
+                <Label Margin="0, 20, 0, 0" TextColor="Black" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" x:Name="prisResult" />
                 <Image Source="lemoun.png" HeightRequest="70" HorizontalOptions="Center"/>
             </StackLayout>
             <Line Stroke="Black" Grid.Row="3" StrokeDashOffset="6" StrokeThickness="5" StrokeDashArray="3,1" X1="10" X2="370"></Line>

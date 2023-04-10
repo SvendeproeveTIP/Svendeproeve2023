@@ -59,7 +59,7 @@
                                 </StackLayout>
                             </gauge:GaugeAnnotation.Content>
                         </gauge:GaugeAnnotation>
-                        <gauge:GaugeAnnotation PositionFactor="0.1"
+                        <gauge:GaugeAnnotation PositionFactor="0.2"
                                            DirectionValue="0"
                                            DirectionUnit="AxisValue">
                             <gauge:GaugeAnnotation.Content>
@@ -73,6 +73,13 @@
                 </gauge:RadialAxis>
             </gauge:SfRadialGauge.Axes>
         </gauge:SfRadialGauge>
+
+        <Label x:Name="prisLabel"
+                                   Text="0.00 kr"
+                                   FontSize="60"
+                                   TextColor="Black"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
 
     </VerticalStackLayout>
 </ContentPage>

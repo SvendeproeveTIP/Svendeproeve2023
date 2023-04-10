@@ -10,8 +10,8 @@ public partial class PopupPage : BasePopupPage
 		InitializeComponent();
 	}
 
-	private async void Button_Clicked(object sender, EventArgs e)
+	private void Button_Clicked(object sender, EventArgs e)
 	{
-		await PopupAction.ClosePopup(); 
-	}
+		Application.Current.MainPage = new MainPage();
+    }
 }

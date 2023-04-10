@@ -15,7 +15,6 @@ namespace GeolocationTest.ViewModels
 
         public TransportViewModel(TransportService transportService, IGeolocation geolocation)
         {
-            Title = "Transport finder";
             this.transportService = transportService;
             this.geolocation = geolocation;
         }

@@ -1,4 +1,6 @@
-﻿namespace GeolocationTest;
+﻿using GeolocationTest.Views;
+
+namespace GeolocationTest;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+        Application.Current.MainPage = new LoginPage();
+    }
 }

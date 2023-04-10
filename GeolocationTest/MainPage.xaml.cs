@@ -10,10 +10,9 @@ public partial class MainPage : ContentPage
 {
     IGeolocation geolocation;
     private bool _isCheckingLocation;
-	public MainPage(TransportViewModel viewModel)
+	public MainPage()
 	{
 		InitializeComponent();
-		BindingContext = viewModel;
 		InitMap1();
         GetCurrentLocation();
 
